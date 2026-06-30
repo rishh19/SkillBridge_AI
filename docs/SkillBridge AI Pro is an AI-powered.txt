@@ -1,0 +1,163 @@
+SkillBridge AI Pro
+Software Design Document (SDD)
+Version 1.0
+
+SkillBridge AI Pro is an AI-powered Career Intelligence Platform that helps students understand their professional profile, evaluate it against job requirements, identify skill gaps, and receive personalized career guidance.
+
+
+SkillBridge AI Pro - Product Requirements Document (PRD)
+1. Problem Statement
+
+Today's students face multiple problems:
+
+They don't know whether their resume is suitable for a particular job.
+ATS scores from online tools are often just keyword matchers and don't explain why the score is low.
+Students don't know which skills to learn first.
+Learning roadmaps are generic instead of personalized.
+There is no single platform that combines resume analysis, job matching, career guidance, and AI recommendations.
+Our Goal
+
+Build an AI-powered Career Intelligence Platform that analyzes a candidate holistically and provides actionable recommendations.
+
+2. Target Users
+
+Primary users:
+
+B.Tech students
+Final-year students
+Freshers
+Internship seekers
+Entry-level professionals
+
+Future users:
+
+Working professionals
+Recruiters
+Universities
+
+
+Pipeline:
+
+User Uploads Resume
+            │
+            ▼
+Document Intelligence
+            │
+            ▼
+Candidate Intelligence
+            │
+            ▼
+User Past History (Future)
+            │
+            ▼
+Job Intelligence
+            │
+            ▼
+Semantic Matching
+            │
+            ▼
+ATS Scoring
+            │
+            ▼
+Recommendation Engine
+            │
+            ▼
+Career Roadmap
+            │
+            ▼
+Dashboard
+
+5. Technology Stack
+
+I want to lock this today.
+
+Layer	Technology	Why?
+Language	Python	ML ecosystem
+Backend	FastAPI	Modern, fast, async
+Frontend	Streamlit (V1)	Faster development; can later swap to React
+Database	Supabase (PostgreSQL)	Free, authentication included
+Authentication	Supabase Auth	Production-ready
+PDF Parsing	PyMuPDF	Fast and reliable
+NLP	spaCy	Structured text processing
+Semantic Matching	Sentence Transformers	Understand meaning, not just keywords
+LLM	OpenAI-compatible provider (later)	Recommendations and roadmap generation
+Deployment	Render	Free backend hosting
+Version Control	Git + GitHub	Industry standard
+6. Folder Structure (Version 1)
+
+Instead of growing organically, we'll build toward this:
+
+SkillBridge_AI/
+│
+├── backend/
+│   ├── api/
+│   ├── services/
+│   ├── ai/
+│   ├── models/
+│   ├── database/
+│   ├── utils/
+│   └── main.py
+│
+├── frontend/
+│
+├── docs/
+│
+├── tests/
+│
+├── data/
+│
+├── requirements.txt
+│
+├── README.md
+│
+└── .gitignore
+
+
+
+
+
+Pipelines
+                    SkillBridge AI Pro
+
+Resume PDF
+      │
+      ▼
+Resume Parser
+      ▼
+Resume Cleaner
+      ▼
+Section Parser
+      ▼
+Candidate Builder
+      ▼
+Candidate Profile ✅
+
+-----------------------------------------
+
+Job Description
+      ▼
+Job Parser
+      ▼
+Job Builder
+      ▼
+Job Profile ✅
+
+-----------------------------------------
+
+NEXT
+
+Candidate Profile
+        +
+Job Profile
+
+        ▼
+
+Matching Engine
+
+        ▼
+
+ATS Score
+
+        ▼
+
+Recommendations

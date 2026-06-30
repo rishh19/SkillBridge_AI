@@ -1,0 +1,29 @@
+{
+    "sql": {
+        "priority": "High",
+        "title": "Database Skills",
+        "reason": "SQL is required for this job.",
+        "suggestion": "Add SQL projects, joins, aggregation and database work to your resume."
+    },
+
+    "docker": {
+        "priority": "High",
+        "title": "Containerization",
+        "reason": "Docker is commonly required for ML deployment.",
+        "suggestion": "Containerize one of your ML projects and mention it in your resume."
+    },
+
+    "aws": {
+        "priority": "Medium",
+        "title": "Cloud Computing",
+        "reason": "Cloud experience improves your ML profile.",
+        "suggestion": "Deploy one project using AWS Free Tier or mention cloud coursework."
+    },
+
+    "tensorflow": {
+        "priority": "Medium",
+        "title": "Deep Learning",
+        "reason": "TensorFlow is required in this role.",
+        "suggestion": "Build one TensorFlow-based project and add it to your resume."
+    }
+}

@@ -1,0 +1,59 @@
+{
+  "programming_languages": [
+    "python","java","c","c++","c#","javascript","typescript","r","go","rust","php","swift","kotlin","scala","matlab","bash","shell"
+  ],
+
+  "databases": [
+    "sql","mysql","postgresql","mongodb","sqlite","oracle","redis","cassandra","firebase","dynamodb","neo4j","elasticsearch"
+  ],
+
+  "machine_learning": [
+    "machine learning","deep learning","artificial intelligence","data science","data analysis",
+    "supervised learning","unsupervised learning","reinforcement learning",
+    "classification","regression","clustering","feature engineering",
+    "feature selection","model deployment","model evaluation",
+    "cross validation","hyperparameter tuning","computer vision",
+    "natural language processing","nlp","time series","recommendation system",
+    "tensorflow","pytorch","keras","scikit-learn","xgboost",
+    "lightgbm","catboost","opencv","hugging face","langchain",
+    "llm","large language models","prompt engineering","rag",
+    "vector database","faiss","chroma","ollama",
+    "numpy","pandas","scipy","statsmodels"
+  ],
+
+  "frameworks": [
+    "fastapi","flask","django","streamlit","react","next.js",
+    "node.js","express","spring boot","vue","angular"
+  ],
+
+  "cloud": [
+    "aws","azure","gcp","ec2","s3","lambda","cloudwatch",
+    "cloud formation","azure ml","vertex ai"
+  ],
+
+  "devops": [
+    "docker","kubernetes","jenkins","github actions",
+    "gitlab ci","terraform","ansible","nginx"
+  ],
+
+  "tools": [
+    "git","github","jira","postman","linux","ubuntu",
+    "vs code","jupyter notebook","google colab","pycharm",
+    "mlflow","airflow","dvc","spark","pyspark","hadoop","kafka"
+  ],
+
+  "visualization": [
+    "matplotlib","seaborn","plotly","tableau",
+    "power bi","excel","ggplot"
+  ],
+
+  "web": [
+    "html","css","bootstrap","tailwind css"
+  ],
+
+  "soft_skills": [
+    "leadership","communication","problem solving",
+    "teamwork","critical thinking","time management",
+    "analytical thinking","presentation"
+  ]
+}
