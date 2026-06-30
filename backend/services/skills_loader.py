@@ -1,7 +1,7 @@
 import re
 
-from backend.services.tokenizer import tokenize_text
-from backend.services.skills_loader import load_skill_database
+from services.tokenizer import tokenize_text
+from services.skills_loader import load_skill_database
 
 
 SKILL_DATABASE = load_skill_database()

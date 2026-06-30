@@ -1,4 +1,4 @@
-from backend.services.job_builder import build_job_profile
+from services.job_builder import build_job_profile
 
 
 def analyze_job(job_description: str):

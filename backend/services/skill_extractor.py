@@ -2,7 +2,7 @@ import re
 import json
 from pathlib import Path
 
-from backend.services.tokenizer import tokenize_text
+from services.tokenizer import tokenize_text
 
 
 # ==========================================================

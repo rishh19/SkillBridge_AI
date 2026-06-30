@@ -1,4 +1,4 @@
-from backend.services.candidate_builder import build_candidate_profile
+from services.candidate_builder import build_candidate_profile
 
 
 def analyze_resume(resume_text: str):

@@ -1,9 +1,8 @@
-from backend.services.resume_analyzer import analyze_resume
-from backend.services.job_analyzer import analyze_job
-from backend.services.matching_engine import match_skills
-from backend.services.recommendation_engine import generate_recommendations
-from backend.services.ats_engine import calculate_ats_score
-
+from services.resume_analyzer import analyze_resume
+from services.job_analyzer import analyze_job
+from services.matching_engine import match_skills
+from services.recommendation_engine import generate_recommendations
+from services.ats_engine import calculate_ats_score
 
 def analyze_candidate_for_job(resume_text, job_description):
 

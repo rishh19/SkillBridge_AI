@@ -1,6 +1,6 @@
-from backend.models.job_profile import JobProfile
-from backend.services.job_parser import clean_job_description
-from backend.services.skill_extractor import extract_skills
+from models.job_profile import JobProfile
+from services.job_parser import clean_job_description
+from services.skill_extractor import extract_skills
 import re
 
 

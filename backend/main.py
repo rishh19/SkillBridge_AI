@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, Form
-from backend.services.resume_parser import extract_text_from_pdf
-from backend.services.ats_analyzer import analyze_candidate_for_job
+from services.resume_parser import extract_text_from_pdf
+from services.ats_analyzer import analyze_candidate_for_job
 import tempfile
 import shutil
 import os

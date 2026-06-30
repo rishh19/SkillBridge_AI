@@ -1,11 +1,11 @@
-from backend.models.candidate_profile import CandidateProfile
-from backend.services.section_parser import split_resume_sections
-from backend.services.skill_extractor import extract_skills
-from backend.services.education_extractor import extract_education
-from backend.services.project_extractor import extract_projects
-from backend.services.experience_extractor import extract_experience
-from backend.services.name_extractor import extract_candidate_name
-from backend.services.certification_extractor import extract_certifications
+from models.candidate_profile import CandidateProfile
+from services.section_parser import split_resume_sections
+from services.skill_extractor import extract_skills
+from services.education_extractor import extract_education
+from services.project_extractor import extract_projects
+from services.experience_extractor import extract_experience
+from services.name_extractor import extract_candidate_name
+from services.certification_extractor import extract_certifications
 
 
 def build_candidate_profile(resume_text: str) -> CandidateProfile:
