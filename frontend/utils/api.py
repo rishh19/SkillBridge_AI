@@ -30,11 +30,14 @@ def analyze_resume(resume, job_description):
 
         if response.status_code == 200:
 
+            st.write("Response received:")
+            st.json(response.json())
+
             return response.json()
 
         else:
 
-            st.error("Analysis failed.")
+            st.error(f"Status Code: {response.status_code}")
 
             st.code(response.text)
 
