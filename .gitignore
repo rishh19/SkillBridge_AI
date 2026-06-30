@@ -6,3 +6,8 @@ __pycache__/
 .env
 .vscode/
 Recording*.mp4
+desktop.ini
+Desktop.ini
+Thumbs.db
+__pycache__/
+*.pyc
