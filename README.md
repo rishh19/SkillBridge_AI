@@ -1,318 +1,351 @@
-# 🚀 SkillBridge AI Pro
+# 🚀 SkillBridge AI
 
 <div align="center">
 
-### AI-Powered Resume Intelligence Platform
+## AI-Powered Resume Intelligence Platform
 
-Analyze resumes, evaluate ATS compatibility, identify skill gaps, match resumes with job descriptions, and receive personalized career recommendations.
+Analyze resumes against job descriptions, calculate ATS compatibility scores, identify skill gaps, and generate personalized career recommendations.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.138-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.58-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Latest-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Render](https://img.shields.io/badge/Render-Deployed-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://render.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/rishh19/SkillBridge_AI)
+
+
+**🌐 Live Frontend:** https://skillbridge-ai-frontend-2loi.onrender.com  
+**⚙️ Backend API:** https://skillbridge-ai-backend-mn6t.onrender.com  
+**📚 API Docs:** https://skillbridge-ai-backend-mn6t.onrender.com/docs  
+**💻 Repository:** https://github.com/rishh19/SkillBridge_AI
 
 </div>
 
 ---
 
-# 📌 Overview
+## 📑 Table of Contents
 
-SkillBridge AI Pro is an AI-powered career intelligence platform that helps job seekers evaluate their resumes against real job descriptions.
+1. Overview
+2. Why SkillBridge AI
+3. Features
+4. Technology Stack
+5. System Architecture
+6. Workflow
+7. Folder Structure
+8. Installation
+9. Running Backend
+10. Running Frontend
+11. API Documentation
+12. ATS Scoring Methodology
+13. Recommendation Engine
+14. Analytics Dashboard
+15. Screenshots
+16. Deployment
+17. Future Enhancements
+18. Learning Outcomes
+19. Author
+20. Support
+21. Acknowledgements
 
-The platform extracts information from resumes, compares it with job requirements, calculates an ATS compatibility score, identifies missing skills, and generates personalized recommendations to improve interview readiness.
+# 📌 Project Overview
 
-The application is built using a modular FastAPI backend and an interactive Streamlit frontend, making it suitable for real-world deployment and scalable future development.
+SkillBridge AI is a modular Resume Intelligence Platform built with **FastAPI** and **Streamlit**. The project extracts structured information from resumes, compares it with a target job description, calculates an ATS compatibility score, highlights missing skills, and produces personalized recommendations.
 
----
+The architecture is intentionally modular so each stage—parsing, profile generation, matching, scoring, and recommendations—can evolve independently.
 
-# 🌐 Live Demo
+# 🎯 Why SkillBridge AI?
 
-## Frontend
+- Automates resume screening.
+- Provides recruiter-style ATS insights.
+- Identifies missing technical skills.
+- Highlights resume strengths.
+- Supports career planning.
+- Uses a clean REST API architecture.
+- Easy to deploy and extend.
+- Designed as a portfolio-quality software engineering project.
 
-https://skillbridge-ai-frontend-2loi.onrender.com
+# ✨ Key Features
 
-## Backend API
-
-https://skillbridge-ai-backend-mn6t.onrender.com
-
----
-
-# ✨ Features
-
-- ATS Resume Analysis
-- Resume Parsing from PDF
-- Job Description Analysis
-- Resume vs Job Matching
+- Resume Parsing
+- Candidate Profile Extraction
+- Skill Extraction
+- Education Extraction
+- Experience Extraction
+- Project Extraction
+- Certificate Extraction
+- Resume vs Job Description Matching
 - ATS Compatibility Score
-- Missing Skills Detection
-- Candidate Profile Generation
-- Personalized Career Recommendations
+- Missing Skill Detection
+- Critical Skill Analysis
+- Personalized Recommendations
 - Interactive Dashboard
-- Resume Upload Interface
-- Dark / Light Theme
-- Cloud Deployment using Render
+- REST API
+- Cloud Deployment
+- Modular Architecture
+- Responsive Streamlit UI
+- Reusable Backend Services
 
----
+# 🛠 Technology Stack
+
+
+| Category | Technology |
+|---|---|
+| Language | Python |
+| Backend | FastAPI |
+| Frontend | Streamlit |
+| Libraries | Pandas, NumPy, PyMuPDF, Requests |
+| Deployment | Render |
+| Version Control | Git & GitHub |
+
 
 # 🏗 System Architecture
 
-```
-Resume PDF
-      │
-      ▼
-Resume Parser
-      │
-      ▼
-Candidate Profile Builder
-      │
-      ▼
-Job Description Parser
-      │
-      ▼
-Matching Engine
-      │
-      ▼
-ATS Score Engine
-      │
-      ▼
-Recommendation Engine
-      │
-      ▼
-Interactive Dashboard
+
+```mermaid
+flowchart TD
+A[Resume PDF]-->B[Resume Parsing]
+B-->C[Candidate Profile Generation]
+C-->D[Job Description Parsing]
+D-->E[Matching Engine]
+E-->F[ATS Score Engine]
+F-->G[Recommendation Engine]
+G-->H[Analytics Dashboard]
 ```
 
----
 
-# 📂 Project Structure
+# 🔄 Workflow
 
-```
+1. Upload Resume PDF
+2. Provide Job Description
+3. Parse Resume
+4. Extract Candidate Information
+5. Parse Job Description
+6. Match Skills
+7. Calculate ATS Score
+8. Detect Missing Skills
+9. Generate Recommendations
+10. Display Analytics Dashboard
+
+# 📂 Folder Structure
+
+
+```text
 SkillBridge_AI/
-
-│
 ├── backend/
 │   ├── services/
 │   ├── models/
 │   ├── data/
 │   └── main.py
-│
 ├── frontend/
 │   ├── assets/
 │   ├── components/
 │   ├── utils/
 │   └── app.py
-│
 ├── docs/
-│
 ├── test_files/
-│
 ├── test_resumes/
-│
 ├── requirements.txt
-│
 └── README.md
 ```
 
----
-
-# 🛠 Tech Stack
-
-## Frontend
-
-- Streamlit
-
-## Backend
-
-- FastAPI
-
-## Programming Language
-
-- Python
-
-## Libraries
-
-- Pandas
-- NumPy
-- PyMuPDF
-- Requests
-
-## Deployment
-
-- Render
-
-## Version Control
-
-- Git
-- GitHub
-
----
-
 # ⚙ Installation
 
-## Clone Repository
 
 ```bash
 git clone https://github.com/rishh19/SkillBridge_AI.git
-
 cd SkillBridge_AI
-```
-
----
-
-## Create Virtual Environment
-
-```bash
 python -m venv skillbridge_venv
-```
 
-Activate
-
-Windows
-
-```bash
+# Windows
 skillbridge_venv\Scripts\activate
-```
 
-Linux / macOS
-
-```bash
+# Linux/macOS
 source skillbridge_venv/bin/activate
-```
 
----
-
-## Install Dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
----
 
-# ▶ Run Backend
+# ▶ Running Backend
+
 
 ```bash
 cd backend
-
 uvicorn main:app --reload
 ```
 
-Backend will run on
+Local URL: http://127.0.0.1:8000
 
-```
-http://127.0.0.1:8000
-```
 
----
+# ▶ Running Frontend
 
-# ▶ Run Frontend
 
 ```bash
 cd frontend
-
 streamlit run app.py
 ```
 
-Frontend will run on
+Local URL: http://localhost:8501
 
-```
-http://localhost:8501
-```
 
----
+# 📡 API Documentation
 
-# 📊 API Endpoint
 
-## Home
-
-```
-GET /
-```
-
-Returns
+## GET /
 
 ```json
-{
-    "message":"Welcome to SkillBridge AI Pro API"
-}
+{"message":"Welcome to SkillBridge AI API"}
 ```
 
----
+## POST /analyze
 
-## Analyze Resume
-
-```
-POST /analyze
-```
-
-Input
+### Input
 
 - Resume PDF
 - Job Description
 
-Output
+### Output
 
 - ATS Score
 - Skill Match
 - Missing Skills
-- Candidate Analysis
+- Candidate Profile
 - Personalized Recommendations
 
----
+
+# 📊 ATS Scoring Methodology
+
+
+The ATS score is calculated using multiple weighted dimensions including:
+
+- Skill Match
+- Critical Skill Coverage
+- Education Alignment
+- Experience Relevance
+- Project Relevance
+- Certifications
+- Resume Completeness
+
+The weighted result provides a recruiter-friendly compatibility score.
+
+
+# 💡 Recommendation Engine
+
+
+Recommendations are generated by comparing extracted resume information against job requirements.
+
+Typical recommendation categories:
+
+- Missing Skills
+- Resume Improvements
+- Project Suggestions
+- Learning Priorities
+- Interview Preparation Tips
+
+
+# 📈 Analytics Dashboard
+
+
+Dashboard panels include:
+
+- ATS Score Card
+- Candidate Summary
+- Skill Match
+- Missing Skills
+- Recommendation Cards
+- ATS Breakdown Visualization
+- Interactive Analysis
+
 
 # 📸 Screenshots
 
-Create a folder named
+### 01 Home Page
 
-```
-screenshots/
-```
+![](screenshots/01_Home_Page.png)
 
-and add
+### 02 Resume Upload
 
-- Home Page
-- Resume Upload
-- ATS Analysis
-- Dashboard
-- Recommendations
+![](screenshots/02_Resume_Upload.png)
 
-Then update this section.
+### 03 Job Description Input
 
----
+![](screenshots/03_Job_Description_Input.png)
 
-# 🎯 Future Enhancements
+### 04 Analysis Dashboard
 
+![](screenshots/04_Analysis_Dashboard.png)
+
+### 05 Skill Analysis
+
+![](screenshots/05_Skill_Analysis.png)
+
+### 06 ATS Analytics
+
+![](screenshots/06_ATS_Analytics.png)
+
+### 07 AI Recommendations
+
+![](screenshots/07_AI_Recommendations.png)
+
+### 08 Frontend Developer Analysis
+
+![](screenshots/08_Frontend_Developer_Analysis.png)
+
+### 09 Frontend Skill Gap
+
+![](screenshots/09_Frontend_Skill_Gap.png)
+
+### 10 Frontend Recommendations
+
+![](screenshots/10_Frontend_Recommendations.png)
+
+### 11 Project Footer
+
+![](screenshots/11_Project_Footer.png)
+
+### 12 Recommendation Accordion
+
+![](screenshots/12_Recommendation_Accordion.png)
+
+### 13 ATS Breakdown Chart
+
+![](screenshots/13_ATS_Breakdown_Chart.png)
+
+
+# 🚀 Deployment
+
+
+- Frontend deployed on Render.
+- Backend deployed on Render.
+- Source code hosted on GitHub.
+- Interactive API documentation available through FastAPI docs.
+
+
+# 🔮 Future Enhancements
+
+- Docker
+- AWS Deployment
 - Authentication
 - Resume History
-- Multiple Resume Comparison
-- AI Chatbot
 - LLM Integration
+- Chat Assistant
 - PDF Report Export
-- Docker Support
-- PostgreSQL Database
-- AWS Deployment
+- Resume Comparison
 - CI/CD Pipeline
-
----
+- Database
 
 # 🎓 Learning Outcomes
 
-This project helped strengthen practical skills in:
-
-- FastAPI Development
-- Streamlit Development
+- FastAPI
+- Streamlit
 - REST APIs
 - Resume Parsing
-- ATS Analysis
-- Machine Learning Workflows
 - Software Architecture
-- Git & GitHub
+- Git
+- GitHub
 - Cloud Deployment
 - Modular Python Development
 
----
-
 # 👨‍💻 Author
+
 
 **Rishav Kumar Shrivastava**
 
@@ -320,28 +353,24 @@ B.Tech Computer Science Engineering
 
 KIIT University
 
-GitHub
+GitHub: https://github.com/rishh19
 
-https://github.com/rishh19
+# ❤️ Support
 
----
+If you found this project useful, please consider giving it a ⭐ on GitHub.
 
-# ⭐ Support
+# 🙏 Acknowledgements
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
 
----
+Special thanks to the open-source communities behind Python, FastAPI, Streamlit, Pandas, NumPy, PyMuPDF, Requests, Git, GitHub, and Render.
 
-# 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
-<div align="center">
+<div align='center'>
 
-### Thank you for visiting SkillBridge AI Pro ❤️
+### Thank you for visiting SkillBridge AI ❤️
 
-Made with Python, FastAPI, Streamlit and lots of ☕.
+Made with Python, FastAPI, Streamlit and ☕.
 
 </div>
