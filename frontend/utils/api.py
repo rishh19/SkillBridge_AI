@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 
 
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "https://skillbridge-ai-backend-mn6t.onrender.com"
 
 
 def analyze_resume(resume, job_description):
