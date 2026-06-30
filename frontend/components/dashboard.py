@@ -8,6 +8,7 @@ from components.charts import render_charts
 
 
 def render_dashboard(result):
+
     if result is None:
         return
 
@@ -16,10 +17,39 @@ def render_dashboard(result):
     matching = result["matching"]
     recommendations = result["recommendations"]
 
-    st.markdown('<div class="sb-section-title">📊 Analysis Dashboard</div>', unsafe_allow_html=True)
+    st.write("✅ Dashboard started")
 
-    render_ats_card(ats)
-    render_profile_card(profile)
-    render_skills_card(matching)
-    render_charts(ats, matching)
-    render_recommendation_card(recommendations)
+    try:
+        render_ats_card(ats)
+        st.write("✅ ATS Card OK")
+    except Exception as e:
+        st.error(f"ATS Card Error: {e}")
+        return
+
+    try:
+        render_profile_card(profile)
+        st.write("✅ Profile Card OK")
+    except Exception as e:
+        st.error(f"Profile Card Error: {e}")
+        return
+
+    try:
+        render_skills_card(matching)
+        st.write("✅ Skills Card OK")
+    except Exception as e:
+        st.error(f"Skills Card Error: {e}")
+        return
+
+    try:
+        render_charts(ats, matching)
+        st.write("✅ Charts OK")
+    except Exception as e:
+        st.error(f"Charts Error: {e}")
+        return
+
+    try:
+        render_recommendation_card(recommendations)
+        st.write("✅ Recommendation Card OK")
+    except Exception as e:
+        st.error(f"Recommendation Card Error: {e}")
+        return
